@@ -1,0 +1,98 @@
+
+.checkbox-left {
+    width: 10%;
+    text-align: left;
+    }
+
+.text-pink{
+    color: #ec407a;
+    }
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 1px 0 0;
+    }
+
+@media (max-width: 479px) {
+    .cust-profile {
+        font-size: 80px;
+        }
+
+    .cust-list {
+        font-size: 30px;
+        }
+
+    .extra-space {
+        padding-bottom: 3px;
+        padding-top: 3px;
+        }
+
+    .btn-spacing {
+        margin-top: 15px;
+        }
+    }
+
+@media (min-width: 480px) and (max-width:767px) {
+    .cust-profile {
+        font-size: 100px;
+        }
+
+    .cust-list {
+        font-size: 60px;
+        }
+
+    .extra-space {
+        padding-bottom: 6px;
+        padding-top: 6px;
+        }
+
+    .btn-spacing {
+        margin-top: 15px;
+        }
+    }
+
+@media (min-width:768px) and (max-width: 991px) {
+    .cust-profile {
+        font-size: 158px;
+        }
+
+    .cust-list {
+        font-size: 95px;
+        }
+
+    .extra-space {
+        padding-bottom: 9px;
+        padding-top: 9px;
+        }
+    }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .cust-profile {
+        font-size: 205px;
+        }
+
+    .cust-list {
+        font-size: 123px;
+        }
+
+    .extra-space {
+        padding-bottom: 12px;
+        padding-top: 12px;
+        }
+    }
+
+@media (min-width: 1200px) {
+
+    .cust-profile {
+        font-size: 250px;
+        }
+
+    .cust-list {
+        font-size: 150px;
+        }
+
+    .extra-space {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        }
+
+    }
