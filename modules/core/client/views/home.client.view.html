@@ -4,15 +4,16 @@
 		<div class="col-sm-6">
 			<div class="row">
 				<div class="col-xs-12">	
-					<img src="modules/core/images/calmapit_icon_55.png" style="margin:10px"/>			
-					<img src="modules/core/images/calmapit_logo1.png" style="width:150px;margin:20px"/>			
+					<img src="/modules/users/img/buttons/calmapit_icon_55.png" style="margin:10px"/>			
+					<img src="/modules/users/img/buttons/calmapit_logo1.png" style="width:150px;margin:20px"/>			
 				</div>
 			</div>
 		</div>
 	</div>
 
 </section>
-<div ng-controller="AppCtrl" layout="column">
+<!--
+<div ng-controller="AppCtrl" layout="column" style="height:500px;">
   <section layout="row" flex>
     <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
       <md-toolbar class="md-theme-indigo">
@@ -29,31 +30,13 @@
       </md-content>
     </md-sidenav>
     <md-content flex class="md-padding">
-      <div layout="column" layout-fill layout-align="center center">
-        <div class="row">
-			<div class="col-sm-6" ng-repeat="alert in alerts">
-				<div class="row">
-					<div class="col-xs-4">
-						<h1 class="pull-right">
-							<button type="button" class="btn" ng-class="alert.colour">
-								<i class="glyphicon" ng-class="alert.icon"></i>
-							</button>
-						</h1>
-					</div>
-					<div class="col-xs-8">
-						<h1>{{alert.total}}</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-8 col-xs-offset-4">
-						<span class="text-muted">{{alert.description}}</span>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div layout="column" layout-fill layout-align="top center">
+        <p>
+        The left sidenav will 'lock open' on a medium (>=960px wide) device.
+        </p>
         <div>
           <md-button ng-click="toggleLeft()"
-            class="md-primary"><!-- hide-gt-md>-->
+            class="md-primary" hide-gt-md>
             Toggle left
           </md-button>
         </div>
@@ -64,6 +47,7 @@
           </md-button>
         </div>
       </div>
+      <div flex></div>
     </md-content>
     <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
       <md-toolbar class="md-theme-light">
@@ -77,7 +61,29 @@
     </md-sidenav>
   </section>
 </div>
+-->
 
+<div ng-controller="AppCtrl as appCtrl">
+  <md-content class="md-padding">
+    <md-grid-list
+        md-cols-gt-md="8" md-cols-sm="3" md-cols-md="6"
+        md-row-height-gt-md="1:1" md-row-height="4:3"
+        md-gutter-gt-md="1px" md-gutter-gt-sm="1px" md-gutter="1px">
+      <md-grid-tile
+          ng-repeat="tile in appCtrl.colorTiles"
+          ng-style="{
+            'background': tile.color
+          }"
+          md-colspan-gt-sm="{{tile.colspan}}"
+          md-rowspan-gt-sm="{{tile.rowspan}}">
+          <span class="txt" style="color:{{tile.text_color}}">{{tile.text}}</span>
+          
+      </md-grid-tile>
+    </md-grid-list>
+  </md-content>
+</div>
+<br>
+<br>
 <div class="panel-body">
     <div class="col-md-offset-3 col-md-3">
         <div>Developed by:</div>
