@@ -64,7 +64,7 @@
 -->
 
 <div ng-controller="AppCtrl as appCtrl">
-  <md-content class="md-padding">
+  <md-content class="md-padding" style="{{tile.back}}">
     <md-grid-list
         md-cols-gt-md="8" md-cols-sm="3" md-cols-md="6"
         md-row-height-gt-md="1:1" md-row-height="4:3"
@@ -77,7 +77,9 @@
           md-colspan-gt-sm="{{tile.colspan}}"
           md-rowspan-gt-sm="{{tile.rowspan}}">
           <span class="txt" style="color:{{tile.text_color}}">{{tile.text}}</span>
-          
+          	<md-tooltip>
+          		{{tile.text}}	
+        	</md-tooltip>
       </md-grid-tile>
     </md-grid-list>
   </md-content>
