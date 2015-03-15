@@ -9,6 +9,13 @@ exports.renderIndex = function(req, res) {
 	});
 };
 
+exports.renderMap = function(req, res) {
+	res.render('modules/map/client/views/list-map.client.view', {
+		user: req.user || null
+	});
+};
+
+
 /**
  * Render the server error page
  */

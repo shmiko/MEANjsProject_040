@@ -10,4 +10,7 @@ module.exports = function(app) {
 
 	// Define application route
 	app.route('/*').get(core.renderIndex);
+
+	// Define application route
+	app.route('/map').get(core.renderMap);
 };

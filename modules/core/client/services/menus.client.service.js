@@ -58,15 +58,16 @@ angular.module('core').service('Menus', [
         // Add new menu object by menu id
         this.addMenu = function(menuId, options) {
             options = options || {};
-
             // Create the new menu
             this.menus[menuId] = {
                 isPublic: ((options.isPublic === null || typeof options.isPublic === 'undefined') ? true : options.isPublic),
                 roles: options.roles || this.defaultRoles,
                 items: options.items || [],
                 shouldRender: shouldRender
+                
+            
             };
-
+            console.log(this.menus[menuId]);
             // Return the menu object
             return this.menus[menuId];
         };
