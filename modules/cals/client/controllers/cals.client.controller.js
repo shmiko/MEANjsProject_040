@@ -2,7 +2,7 @@
 
 // Cals controller
 angular.module('cals').controller('CalsController',['$scope', '$stateParams', '$location', 'Authentication', 'Cals','ui.calendar',
-	function($scope, $stateParams, $location, Authentication, Cals ) {
+	function($scope, $stateParams, $location, Authentication, Cals, ui.calendar ) {
 		$scope.authentication = Authentication;
 		$scope.eventSources = [];
 		

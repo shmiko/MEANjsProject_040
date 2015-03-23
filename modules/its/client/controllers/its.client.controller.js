@@ -1,8 +1,8 @@
 'use strict';
 
 // Its controller
-angular.module('its').controller('ItsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Its',
-	function($scope, $stateParams, $location, Authentication, Its ) {
+angular.module('its').controller('ItsController', ['$scope', '$stateParams', '$location', 'Authentication', 
+	function($scope, $stateParams, $location, Authentication) {
 		$scope.authentication = Authentication;
 
 		// Create new It
