@@ -10,7 +10,6 @@ angular.module('customers').controller('CustomersController', ['$scope', '$state
 		// Find a list of Customers
 		this.customers = Customers.query();
 
-
 		// Open a modal window to Create a single customer record
 		this.modalCreate = function (size) {
 

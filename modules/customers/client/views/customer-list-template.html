@@ -1,3 +1,4 @@
+<section data-ng-controller="CustomersController">
 <div class="row extra-space">
     <div class="list-group">
         <div class="col-xs-6 col-sm-4 extra-space" data-ng-repeat="customer in customersCtrl.customers | filter:searchText">
@@ -29,3 +30,4 @@
         No Customers yet, why don't you <a ng-click="customersCtrl.modalCreate('lg')">create one</a>?
     </div>
 </div>
+</section>
