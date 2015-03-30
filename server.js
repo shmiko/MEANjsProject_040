@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Module dependencies.
+ * Module dependencies.  
  */
 var config = require('./config/config'),
 	mongoose = require('./config/lib/mongoose'),
