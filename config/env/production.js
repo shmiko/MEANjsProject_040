@@ -5,7 +5,7 @@
 //db: 'mongodb://tripstomp:waxnepke@ds031641.mongolab.com:31641/calmapit',
     
 module.exports = {
-    db: 'mongodb://tripstomp:waxnepke@ds031641.mongolab.com:31641/calmapit',
+    db: 'mongodb://tripstomp:shmikcom@ds031641.mongolab.com:31641/calmapit',
     facebook: {
         clientID: process.env.FACEBOOK_ID || 'APP_ID',
         clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',

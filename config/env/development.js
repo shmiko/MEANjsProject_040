@@ -2,7 +2,8 @@
 
 module.exports = {
 	//db: 'mongodb://user:pass@db.mongohq.com:10000/database',
-	db: 'mongodb://localhost/meanestjs',
+	//db: 'mongodb://localhost/meanestjs',
+    db: 'mongodb://tripstomp:shmikcom@ds031641.mongolab.com:31641/calmapit',
     app: {
 		title: 'meanApp - Development Environment'
 	},
